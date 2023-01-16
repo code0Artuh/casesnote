@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #0e6cc4;
+}
+
+.right-container-button {
+	width: 80px;
+	height: 70px;
+	border: none;
+	transition: all 300ms;
+	cursor: pointer;
+	color: white;
+	font-family: roboto, sans-serif;
+}
+.right-container-button label {
+	color: white;
+	position: absolute;
+	left: 25px;
+	top: 10px;
+	line-height: 28px;
+}
+.right-container-button:hover {
+	transition: all 0.5s cubic-bezier(.62, .1, .5, 1);
+	width: 150px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#long-text {
+	opacity: 0;
+	color: white;
+	width: 0;
+	margin: 0;
+}
+.right-container-button:hover > #long-text {
+  transition-property: opacity, left, top, height;
+  transition-duration: 2s, 1s;
+  color:rgb(255, 254, 254);
+	opacity: 1;
+	margin-left: 45px;
+	font-size: 10px;
+	width: 100px;
+  cursor: pointer;
+}
+
+
+input[type="checkbox"]{
+    cursor:pointer;
+    appearance: none;
+    background: #ffffff;
+    transition: all 250ms linear;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    border: 1,5px solid #bfbfbf;
+}
+
+input[type="checkbox"]{
+  border-radius: none;
+}
+
+input[type="checkbox"]:hover{
+  background-color: rgb(167, 151, 221);
+  transition: ease-in-out 0,5s;
+}
+
+input[type="checkbox"]:checked{
+  border-color: rgb(48, 45, 97);
+  background: linear-gradient(0deg, rgba(34,116,195,1) 0%, rgba(14,42,221,1) 100%);
+  box-shadow: inset 0 0 0 1px #ffffff;  
+  content: '';
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+input[type="text"]:focus{
+  box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.137);
+}
+
+.waves {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  top: 10%;
+  left: -40%;
+  width: 120vw;
+  height: 110vh;
+  margin-top: -2vh;
+  margin-left: -3vw;
+  transform-origin: 50% 48%;
+  border-radius: 47%;
+  filter: blur(7px) !important;
+  opacity: 0.5;
+}
+
+.wave.wave--one {
+  animation: drift 18s infinite linear;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wave.wave--two {
+  animation: drift 22s infinite linear;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wave.wave--three {
+  animation: drift 26s infinite linear;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;overflow: hidden;
+}
+section:nth-child(1){
+  font-weight: bold;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  color: #fff;
+  margin: 60px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(24, 72, 156);
+  box-shadow: #40559b 0px 2px 18px 0px;
+  
+}
+section:nth-child(1) > a{
+  font-size: 20pt;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+section:nth-child(1) > p {
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+section:nth-child(1) > p:last-child{
+  justify-content: flex-end;
+}
+section:nth-child(1) > p:last-child > button:last-child{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border: 3px solid green;
+  transition: background-color .5s;
+}
+section:nth-child(1) > p:last-child > button:last-child:hover{
+  border-radius: 5px;
+  outline: 1px solid rgb(210, 255, 210);
+  background-color: rgb(199, 247, 199);
+}
+section:nth-child(1) > p:last-child > button:last-child:active{
+  background-color: green;
+  color: #fff;
+}
+section:nth-child(1) > p:last-child > button{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border: 3px solid rgb(255, 0, 0);
+  transition: background-color .5s;
+}
+section:nth-child(1) > p:last-child > button:hover{
+  border-radius: 5px;
+  outline: 1px solid rgb(255, 210, 210);
+  background-color: rgb(247, 199, 199);
+}
+section:nth-child(1) > p:last-child > button:active{
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+section:nth-child(1) > p > input,
+section:nth-child(1) > p > textarea,
+section:nth-child(1) > p > select{
+  outline: 3px solid transparent;
+  transition: outline .2s ease-in;
+}
+section:nth-child(1) > p > input:focus,
+section:nth-child(1) > p > textarea:focus,
+section:nth-child(1) > p > select:focus{
+  outline-color:rgb(176, 196, 241);
+}
+section:nth-child(1) > p > label, 
+section:nth-child(1) > p > input,
+section:nth-child(1) > p > textarea,
+section:nth-child(1) > p > select{
+  outline: 2px solid transparent;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+}
+#gerar{
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.48);
+  z-index: 8;
+  margin-bottom: 180px;
+}
+#gerarmove{
+  padding: 15px;
+  cursor: move;
+  background-color: rgb(164, 184, 193);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+}
+#gerarmove > i{
+  padding: 0 10px 0 0;
+}
+#copy1{
+ height: 300px;
+ overflow: auto;
+}
+#copy1,
+#hotkey{
+  border-radius: 5px;
+  max-width: 100%;
+  padding: 15px;
+  overflow: auto;
+  transition: background-color .1s ease-in;
+}
+#copy1:hover,
+#hotkey:hover{
+  background-color: rgb(216, 216, 216);
+}
+#gerar > div{
+  position: relative;
+}
+#gerar > a{
+  z-index: 100;
+  margin: 10px;
+  position: absolute;
+  text-decoration: none;
+  top: 0px;
+  right: 0px;
+  color: red;
+  font-size: 15pt;
+}
+#gerar > p,
+#copy1 > p,
+#hotkey > p{
+  padding: 5px;
+}
+.copy1,
+.copy2{
+  background-color: transparent;
+  border: none;
+  font-size: 20pt;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  cursor: pointer;
+}
+.copy1:hover,
+.copy2:hover,
+.copy3:hover,
+.copy4:hover{
+  color: rgb(153, 153, 153);
+}
+
+
+#tags-implement > p,
+#bads > p{
+  padding: 5px;
+}
+[type*="checkbox"]{
+  margin-right: 5px;
+}
+#tags-implement > p,
+#bads > p{
+  display: flex;
+  align-items: center
+}
+
+#tags-implement > p > label,
+#bads > p > label{
+  cursor: pointer;
+  max-width: 700px;
+  padding: 5px;
+}
+#bads > p:first-child > label:hover,
+#tags-implement > p:first-child > label:hover{
+  background-color: transparent;
+}
+#bads > p > label:hover,
+#tags-implement > p > label:hover{
+  background-color: rgb(48, 111, 204);
+}
+
+#other,
+#bval-other{
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(103, 159, 255);
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+#bval-other::placeholder,
+#other::placeholder{
+  color: #fff;
+}
+#bval-other:hover,
+#other:hover{
+  background-color: rgb(158, 194, 255);
+}
+#bval-other:focus,
+#other:focus{
+  background-color: #fff;
+  color: #000;
+}
+input[type="checkbox"]{
+  display: block;
+  cursor: pointer;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.copy3,
+.copy4{
+  background-color: transparent;
+  border: none;
+  font-size: 15pt;
+  padding: 5px;
+  cursor: pointer;
+}
+.copy3:hover,
+.copy4:hover{
+  color: rgb(153, 153, 153);
+}
+
+/*utilidades*/
+#container-util{
+
+  position: absolute;
+  top: 0;
+}
+#util{
+  width: 60px;
+  height: 60px;
+  font-size: 25pt;
+  border-radius: 50%;
+  background-color: rgb(166, 166, 166);
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+#util > i{
+  position: relative;
+  top: 47%;
+  left: 51%;
+  transform: translate(-50%,-50%);
+}
+#email{
+  background: #fff;
+}
+#listemail{
+  overflow: hidden;
+  display: none;
+  background-color: rgb(191, 190, 190);
+  list-style: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+#listemail button{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#listemail button:hover{
+  background-color: #000;
+  color: #fff;
+}
+.exibe{
+  display: block !important;
+}
+#take{
+  /*opacity: 0;*/
+  display: none;
+}
+label{
+  color: #fff;
+}
