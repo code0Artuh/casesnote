@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentario</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/google.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class='waves'>
+    <div class='wave wave--one'></div>
+    <div class='wave wave--two'></div>
+    <div class='wave wave--three'></div>
+  </div>
+  
+
+  <div id="container">
+    
+    <section>
+      <a class="right-container-button" href="https://docs.google.com/presentation/d/1Jra4de31rYaFZ0JMH_CiVzr2S3F8J1qcUcJRaw0Lw5Q/edit?hl=pt-BR&forcehl=1#slide=id.g11ce864e316_294_6" target="_blank">
+        <label class="short-text">
+        <i class="fa-solid fa-circle-info short-text"></i>
+        </label>
+        <label id="long-text">Treinamento QA!</label>
+      </a>
+      <p>
+        <label for="sepekeasy">Speakeasy ID:</label>
+        <input data-comentario="comentario" type="text" name="sepekeasy" id="sepekeasy">
+      </p>
+      <p>
+        <label for="substatus">Substatus:</label>
+        <select data-comentario="comentario" name="substatus" id="substatus">
+        </select>
+      </p>
+      <p>
+        <label for="reason">Reason/Comments:</label>
+        <input data-comentario="comentario" type="text" name="reason" id="reason">
+      </p>
+      <p>
+        <label for="comments">On Call Comments:</label>
+        <textarea data-comentario="comentario" name="comments" id="comments" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label for="">Tags Implemented:</label>
+        <input data-comentario="comentario" type="text" name="valor" id="valor" style="display: none;">
+      </p>
+      <div id="tags-implement">
+        <p>
+          <input type="checkbox" name="tag" id="tag">
+          <label for="tag"><input type="text" name="other" id="other" placeholder="Other"></label>
+        </p>
+      </div>
+      <p>
+        <label for="screenshots">Screenshots:</label>
+        <textarea data-comentario="comentario" name="screenshots" id="screenshots" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label for="mcids">Multiple CIDs:</label>
+        <input data-comentario="comentario" type="text" name="mcids" id="mcids">
+      </p>
+      <p>
+        <label for="oncall">On Call( Call Started) signaled on time?:</label>
+        <input data-comentario="comentario" type="text" name="oncall" id="oncall">
+      </p>
+      <p>
+        <label for="">*Bad Lead:</label>
+        <input data-comentario="comentario" name="bad" id="bad" style="display: none;">
+      </p>
+      <div id="bads">
+        <p>
+          <input type="checkbox" name="bval" id="bval">
+          <label for="bval"><input type="text" name="bval-other" id="bval-other" placeholder="Other"></label>
+        </p>
+      </div>
+      <p>
+        <button>RESET</button>
+        <button>GERAR</button>
+      </p>
+    </section>
+    <section id="gerar">
+      <div id="gerarmove"><i class="fa-sharp fa-solid fa-note-sticky"></i>TechNote</div>
+      <a href="javascript:void(0)"><i class="fa-regular fa-circle-xmark"></i></a>
+      <div>
+        <div id="copy1">
+          <p id="data"></p>
+          <p><b><br>Speakeasy ID:</b> <span></span></p>
+          <p><b><br>Substatus:</b> <span></span></p>
+          <p><b><br>Reason/Comments:<br></b> <span></span></p>  
+          <p><b>On Call Comments:<br></b> <span></span></p>    
+          <p><b>Tags Implemented:<br></b> <span></span></p>
+          <p><b>Screenshots:<br></b> <span></span></p>
+          <p><b>Multiple CIDs:<br></b> <span></span></p>
+          <p><b>On Call( Call Started) signaled on time?:<br></b> <span></span></p>    
+          <p><b>*Bad Lead:<br></b> <span></span></p>
+        </div>
+        <p>
+          <button class="copy1" data-clipboard-target="#copy1">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </p>
+      </div>
+      <div id="hotkey">
+      </div>
+    </section>
+  
+  
+    <div id="container-util">
+      <div id="util">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <ul id="listemail">
+        <li><button class="copybtn" data-clipboard-target="#take" onclick="abreCopiaEmail('take')">Email - Take</button></li>
+      </ul>
+    </div>
+    <div id="email">
+      <div id="take"></div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/emailutil.js"></script>
+ 
+</body>
+</html>
+
+
