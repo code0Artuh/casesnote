@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.color{
+  background-color: #a8a8a8;
+}
 
 #menuToggle
 {
@@ -27,11 +30,11 @@
 }
 
 
-#menuToggle input
+#menuToggle > input[type="checkbox"]
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 40px !important; 
+  height: 32px !important;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -45,7 +48,7 @@
 }
 
 
-#menuToggle span
+#menuToggle line
 {
   display: block;
   width: 33px;
@@ -65,18 +68,18 @@
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#menuToggle line:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#menuToggle line:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
 
 
-#menuToggle input:checked ~ span
+#menuToggle input:checked ~ line
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -84,14 +87,14 @@
 }
 
 
-#menuToggle input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ line:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 
-#menuToggle input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ line:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -118,8 +121,9 @@
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 10px 5px;
   font-size: 22px;
+  cursor: pointer;
 }
 
 #menuToggle input:checked ~ ul
@@ -202,6 +206,7 @@ input[type="checkbox"]:checked{
 input[type="text"]:focus{
   box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.137);
 }
+
 
 @keyframes drift {
   from {
@@ -516,10 +521,26 @@ input[type="checkbox"]{
 .exibe{
   display: block !important;
 }
-#take{
-  /*opacity: 0;*/
+#take,
+#takees,
+#emai10pt,
+#emai10es,
+#emai39,
+#emai39es{
   display: none;
 }
 label{
   color: #fff;
+}
+
+.copybtn{    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[alt="brasil"],
+[alt="espanha"]{
+  width: 35px;
+  padding: 0 5px;
+  margin-left: 5px;
 }

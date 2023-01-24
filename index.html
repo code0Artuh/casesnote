@@ -10,28 +10,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav role="navigation">
+
+
+  
+  <nav role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
     
-      <span></span>
-      <span></span>
-      <span></span>
+      <line></line>
+      <line ></line>
+      <line></line>
       
     
       <ul id="menu">
+       <li>Nome+Equipe de Soluções Tecnicas</li>
        <li>Tempo da Ligação</li>
        <li>Confirmar task, site do anunciante e quem é o AM'</li>
        <li>Ligação Gravada</li>
        <li>Pedir a confirmação do CID da conta</li>
        <li>Termos e Condições</li>
-       <li>Backup</li>
+       <li>Backup + confirmação de acessos</li>
        <li>Conteúdo Sensível</li>
        <li>Procedimentos da Implementação</li>
        <li>Resumo</li>
        <li>Ajuda adicional</li>
        <li>Fechar Compart. de Tela</li>
        <li>Próximos passos</li>
+       <li>Caso queira otimizar a campanha,falar com AM</li>
        <li>Pesquisa de satisfação</li>
       </ul>
   </nav>
@@ -73,11 +78,11 @@
       </div>
       <p>
         <label for="screenshots">Screenshots:</label>
-          <textarea data-comentario="comentario" name="screenshots" id="screenshots" cols="30" rows="10">GTM Screenshot:
+        <textarea data-comentario="comentario" name="screenshots" id="screenshots" cols="30" rows="10">GTM Screenshot:
 
 Ads Screenshot:
 
-Tag Assistant Screenshot:
+TagAssistant Screenshot:
 
 Analytics Screenshot:</textarea>
       </p>
@@ -136,11 +141,38 @@ Analytics Screenshot:</textarea>
         <i class="fa-solid fa-envelope"></i>
       </div>
       <ul id="listemail">
-        <li><button class="copybtn" data-clipboard-target="#take" onclick="abreCopiaEmail('take')">Email - Take</button></li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#take" onclick="abreCopiaEmail('take')">Email - Take PT <img src="./img/brasil (1).png" alt="brasil"></button>
+        </li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#takees" onclick="abreCopiaEmail('takees')">Email -
+            Take ES <img src="./img/espanha.png" alt="espanha"></button>
+        </li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#emai10pt" onclick="abreCopiaEmail('emai10pt')">Email -
+            10 min PT <img src="./img/brasil (1).png" alt="brasil"></button>
+        </li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#emai10es" onclick="abreCopiaEmail('emai10es')">Email -
+            10 min ES <img src="./img/espanha.png" alt="espanha"></button>
+        </li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#emai39" onclick="abreCopiaEmail('emai39')">Email -
+            3/9 PT <img src="./img/brasil (1).png" alt="brasil"></button>
+        </li>
+        <li>
+          <button class="copybtn" data-clipboard-target="#emai39es" onclick="abreCopiaEmail('emai39es')">Email -
+            3/9 ES <img src="./img/espanha.png" alt="espanha"></button>
+        </li>
       </ul>
     </div>
     <div id="email">
       <div id="take"></div>
+      <div id="takees"></div>
+      <div id="emai10pt"></div>
+      <div id="emai10es"></div>
+      <div id="emai39"></div>
+      <div id="emai39es"></div>
     </div>
   </div>
 

@@ -347,3 +347,10 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+const passos = document.querySelectorAll('#menu > li')
+passos.forEach(function(item){
+  item.addEventListener('click', function(e){
+    e.target.classList.toggle('color')
+  })
+})
